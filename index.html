@@ -3,259 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--CSS Bootstrap-->
+    <meta name="description" content="Find your next escape with Vacations: inspiring destinations, thoughtful travel tips, and trip ideas for every kind of traveller.">
+    <title>Vacations | Find your next escape</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    
-    <!--CSS link-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-   <!-- nis navbar-->
-    <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-     <a class="navbar-brand" href="#"><img src="images/vacations.png" alt=""> Vacations</a>
-   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    <!--fund navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#home" aria-label="Vacations home">
+                    <img src="images/vacations.png" alt=""> <span>Vacations</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#offers">Special offer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item ms-lg-3"><a class="btn btn-primary nav-cta" href="#newsletter">Get travel updates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<!--nis banner/hero-->
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/img3.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/img2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="images/im1.jpg.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!--fund banner/hero-->
-</header>
-<!-- nis main-->
- <main>
-    <section class="service container">
-    <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+        <section id="home" class="hero" aria-label="Featured destinations">
+            <div id="destinationCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img3.jpg" class="d-block w-100" alt="A scenic place to discover on your next vacation">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="A beautiful destination for a relaxing getaway" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/im1.jpg.jpg" class="d-block w-100" alt="A memorable view to inspire your next trip" loading="lazy">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="hero-shade"></div>
+                <div class="hero-content container">
+                    <p class="eyebrow">A little more wonder, a lot less planning</p>
+                    <h1>Your next great escape starts here.</h1>
+                    <p class="hero-copy">Find places worth dreaming about and simple inspiration to help make your time away unforgettable.</p>
+                    <a class="btn btn-primary btn-lg" href="#destinations">Explore destinations <span aria-hidden="true">→</span></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous slide</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next slide</span>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="benefits container" aria-label="Why travel with Vacations">
+            <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">✦</span><div><h2>Ideas for every traveller</h2><p>From slow weekends to big adventures.</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">⌖</span><div><h2>Places with a point of view</h2><p>Find inspiration beyond the usual.</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">♡</span><div><h2>Thoughtful travel tips</h2><p>Helpful details for a smoother trip.</p></div></div>
+        </section>
+
+        <section id="destinations" class="section-space container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Make room for a getaway</p>
+                    <h2>Find your kind of escape</h2>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <p>Whether you want a change of scenery or a new story to tell, start with a place that feels like you.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="destination-card">
+                        <img src="images/img3.jpg" alt="A scenic destination for an outdoor adventure" loading="lazy">
+                        <div class="destination-copy"><span class="destination-tag">For the curious</span><h3>Go a little further</h3><p>Find fresh air, new trails, and a different perspective.</p><a href="#newsletter" class="text-link">Get inspired <span aria-hidden="true">→</span></a></div>
+                    </article>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="destination-card">
+                        <img src="images/img2.jpg" alt="A peaceful setting for a restful break" loading="lazy">
+                        <div class="destination-copy"><span class="destination-tag">For the daydreamers</span><h3>Slow things down</h3><p>Trade the everyday rush for moments that are all your own.</p><a href="#newsletter" class="text-link">Get inspired <span aria-hidden="true">→</span></a></div>
+                    </article>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="destination-card">
+                        <img src="images/im1.jpg.jpg" alt="An inviting scene for a memorable holiday" loading="lazy">
+                        <div class="destination-copy"><span class="destination-tag">For the memory-makers</span><h3>Make it a story</h3><p>Discover the kind of trip you’ll still talk about later.</p><a href="#newsletter" class="text-link">Get inspired <span aria-hidden="true">→</span></a></div>
+                    </article>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <img src="images/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offer-section">
+            <div class="container">
+                <div class="offer-panel">
+                    <div class="offer-image">
+                        <img src="images/img2.jpg" alt="A beautiful escape to inspire a long weekend away" loading="lazy">
+                        <span class="offer-stamp">A fresh<br>perspective</span>
+                    </div>
+                    <div class="offer-copy">
+                        <p class="eyebrow">The getaway edit</p>
+                        <h2>Make your next long weekend count.</h2>
+                        <p>Our featured escape is a little reminder to take that break you’ve been talking about. Explore our seasonal trip inspiration and find a change of scene that fits your pace.</p>
+                        <a class="btn btn-primary" href="#newsletter">Explore the featured escape <span aria-hidden="true">→</span></a>
+                        <p class="offer-note">Travel inspiration only — trip availability and pricing depend on your chosen provider.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="promocition container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="row">
-                        <div class="col-12 col-md-7">
-                            <img src="images/img2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <h3> Titull</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex dolor, nostrum
-                                tempore natus cupiditate veniam architecto dolorem doloribus ad ipsum molestias suscipit
-                                molestiae laudantium modi sint adipisci esse ea.</p>
-                        </div>
-                    </div>
+
+        <section class="about-section container section-space">
+            <div class="about-copy">
+                <p class="eyebrow">A better way to dream about away</p>
+                <h2>Good trips begin with good inspiration.</h2>
+                <p>Vacations is here to make the dreaming part easy. Browse thoughtful ideas, discover new places, and gather the little details that help turn “someday” into a plan.</p>
+                <a class="text-link" href="about.html">More about us <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="about-image"><img src="images/im1.jpg.jpg" alt="A view to help you picture your next trip" loading="lazy"></div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container faq-layout">
+                <div class="faq-intro">
+                    <p class="eyebrow">Good to know</p>
+                    <h2>A few helpful answers</h2>
+                    <p>Have another question? <a href="contact.html">Get in touch</a> and we’ll be happy to help.</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="row">
-                        <div class="col-12 col-md-5">
-                            <h3>Titull</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid voluptate fugiat
-                                libero quae facilis illum ullam ipsum odio saepe assumenda dicta, qui deserunt veniam
-                                mollitia architecto? Temporibus, ipsam natus.</p>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <img src="images/img2.jpg" alt="" class="img-fluid">
-                        </div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Can I book a trip directly through Vacations?</button></h3>
+                        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">This site shares travel inspiration and ideas. Booking details, availability, and pricing are handled by the travel provider you choose.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">How do I find ideas that suit my trip?</button></h3>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Start with the destination themes on this page, then use our travel updates for new seasonal ideas and helpful planning tips.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">What will I receive if I subscribe?</button></h3>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Occasional travel inspiration, destination ideas, and practical tips. You can unsubscribe from updates at any time once the mailing list is connected.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Is the featured escape a bookable promotion?</button></h3>
+                        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">It’s a featured travel idea, not a live offer. Check with your selected provider for current availability, prices, and terms.</div></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="infos container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2>About</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut explicabo earum, repellat modi harum laborum repellendus illum placeat sapiente voluptates itaque dicta voluptatem odio nostrum expedita recusandae quasi perspiciatis cupiditate.</p>
-                
-                </div>
-                <div class="col-12 col-md-6">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47933.83533295602!2d19.804979200000002!3d41.33355519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031036e470b61%3A0xa9c620412b7f16ed!2sEvolve%20Web%20Studio%20-%20Digital%20Agency!5e0!3m2!1sen!2s!4v1795021726355!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                </div>
-            </div>
 
-    </section>
-<!--fund main-->
-</main>
-   <!--nis footer-->
-    <footer class="container-fluid mt-5 pt-3">
+        <section id="newsletter" class="newsletter-section container">
+            <div class="newsletter-content">
+                <p class="eyebrow">A good email to look forward to</p>
+                <h2>Bring a little inspiration to your inbox.</h2>
+                <p>Sign up for occasional destination ideas and thoughtful travel tips. No noise, just a little nudge towards your next escape.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <label class="visually-hidden" for="newsletterEmail">Email address</label>
+                    <input class="form-control" type="email" id="newsletterEmail" name="email" placeholder="Your email address" autocomplete="email" required>
+                    <button class="btn btn-primary" type="submit">Subscribe <span aria-hidden="true">→</span></button>
+                </form>
+                <p class="privacy-note">Demo signup only — emails won’t be sent until a mailing-list provider is connected.</p>
+                <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+            </div>
+            <div class="newsletter-decoration" aria-hidden="true"><span>✦</span><span>✈</span><span>✦</span></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="images/vacations.png" alt="">
-                    <p>Loren ipsum dolor sit amet</p>
-                    <div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4 footer-brand">
+                    <a class="navbar-brand" href="#home"><img src="images/vacations.png" alt=""> <span>Vacations</span></a>
+                    <p>Find your next escape. Make it your own.</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mt-3">
-                    <h3>Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h2>Explore</h2>
+                    <ul class="list-unstyled"><li><a href="#destinations">Destinations</a></li><li><a href="#offers">Featured escape</a></li><li><a href="#faq">FAQ</a></li></ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="tel:1234567890"><i class="fa-solid fa-phone"></i> 0000000</a></li>
-                    </ul>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h2>About</h2>
+                    <ul class="list-unstyled"><li><a href="about.html">Our story</a></li><li><a href="contact.html">Contact us</a></li></ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <h3>Subscribe</h3>
-                    <div class="mb-3">
-
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <input type="Submit" class="btn btn-primary" value="Subscribe">
+                <div class="col-12 col-lg-4 footer-contact">
+                    <h2>Questions?</h2>
+                    <p>We’d love to hear from you.</p>
+                    <a href="contact.html" class="text-link">Visit our contact page <span aria-hidden="true">→</span></a>
                 </div>
-
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="viti"></span> Vacations. All rights reserved.</p>
+                <a href="contact.html">Privacy &amp; contact</a>
             </div>
         </div>
-        <div class="row mt-4 pt-3 border-top">
-            <div class="col-12 col-md-6">
-                <p>&copy; Copyright<span id="viti"></span></p>
-            </div>
-            <div class="col-12 col-md-6 text-end">
-                <a href="">Terms and Conditions</a>
-                <a href="">Privacy Policy</a>
-            </div>
     </footer>
-    <!--fund footer-->
 
-    <!--JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
-    <!--JS-->
     <script src="js/index.js"></script>
 </body>
 </html>
